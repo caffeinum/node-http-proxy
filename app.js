@@ -37,10 +37,7 @@ var https = require('https'),
 //
 httpProxy.createProxyServer({
   target: 'http://punchme.best',
-  agent  : https.globalAgent,
-  headers: {
-    host: 'punchme.best'
-  }
+  // agent  : https.globalAgent,
 }).listen(process.env.PORT || 8888);
 
 console.log('http proxy server'.blue + ' started '.green.bold + 'on port '.blue + '8011'.yellow);
