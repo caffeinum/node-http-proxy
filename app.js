@@ -43,4 +43,4 @@ httpProxy.createProxyServer({
   }
 }).listen(process.env.PORT || 8888);
 
-util.puts('http proxy server'.blue + ' started '.green.bold + 'on port '.blue + '8011'.yellow);
+console.log('http proxy server'.blue + ' started '.green.bold + 'on port '.blue + '8011'.yellow);
